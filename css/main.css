@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root{ /* Isso são variáveis no CSS */
+    --cor-de-fundo: #f29f05;
+    --laranja-secundario-claro: #f28705;
+    --marrom-secundario: #412915;
+    --cor-titulo: #022859;
+    --azul-claro: #1243a6;
+    --fonte-titulo: "Nunito", sans-serif;
+}
+
+*{  /* Isso é reset no CSS da página, então eu deixei todos os itens com 0 de margin e padding, fica mais fácil de trabalhar */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+}
+body{
+    background-color: var(--cor-de-fundo); /* Como se utiliza a varivel */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header{
+    padding: 15px 70px;
+    display: flex; /* Isso é um posicionamento de página chamado Flexbox */
+    justify-content: space-between; /* esse justify é uma forma de falar pro flex box, como vai ficar o posicionamento */
+}
+#logo-customizada{
+    border-radius: 50%; /* Arredondamento das bordas do bloco */
+    width: 65px;
+    height: 65px;
+    /*border: 2px solid black; /* borda */
+    box-shadow: 0px 0px 20px black;
+}
+nav{
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px; /* Gap é o quanto vai ficar a distancia de cada elemento que está sendo aplicado o flexbox */
+}
+nav > ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none; /* Isso aqui tira as bolinhas que ficam quando se cria a lista */
+    font-family: var(--fonte-titulo); /* Exemplo de como se utiliza uma varivel de fonte */
+    font-weight: bold;
+    font-size: 1.3em; /* "em" é um tipo de medida, como o px por exemplo */
+    
+}nav > ul > li > a{
+    transition: 0.5s; /* transition serve para dizer o tempo que a animação do hover, vai durar, quanto mais você colocar, mas lento vai ficar a transição para a propriedade que foi colocada no hover */
+    padding: 10px 17px;
+    border-radius: 10px;
+    color: black;
+    text-decoration: none; /* o link fica com um faixa embaixo como padrão, isso aqui tira essa faixa */
+}
+nav > ul > li > a:hover{
+    background-color: var(--marrom-secundario);
+    color: #f29f05;
+}
+#imagem-principal{
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/ong-dva-entrada.jpg);
+}
+#texto-imagem-principal{
+    background-color: rgba(0, 0, 0, 0.63);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+#texto-imagem-principal > h1, 
+#texto-imagem-principal > p{
+    color: white;
+    font-family: var(--fonte-titulo);
+    font-weight: 900;
+}
+#texto-imagem-principal > h1{
+    font-size: 4em;
+}
+#texto-imagem-principal > p{
+    font-size: 3em;
+}
+
+#sobre-nos{
+    background-color: var(--marrom-secundario);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;   
+}
+
+#sobre-nos > aside{
+    width: 600px;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+#sobre-nos > aside > h2{
+    margin-bottom: 30px;
+    font-family: var(--fonte-titulo);
+    font-size: 2em;
+}
+#sobre-nos > aside > p{
+    margin-bottom: 30px;
+    width: 80%;
+    margin: auto;
+}
