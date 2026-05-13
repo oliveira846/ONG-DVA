@@ -57,37 +57,46 @@ nav > ul > li > a:hover{
     background-color: var(--marrom-secundario);
     color: #f29f05;
 }
-#imagem-principal{
+#sobre-nos{
     width: 100%;
-    height: 700px;
+    height: 800px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(../img/ong-dva-entrada.jpg);
 }
-#texto-imagem-principal{
+#texto-sobre-nos{
+    padding: 100px;
     background-color: rgba(0, 0, 0, 0.63);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     width: 100%;
     height: 100%;
 }
-#texto-imagem-principal > h1, 
-#texto-imagem-principal > p{
+#texto-sobre-nos > h1, 
+#texto-sobre-nos > h2{
     color: white;
     font-family: var(--fonte-titulo);
     font-weight: 900;
 }
-#texto-imagem-principal > h1{
-    font-size: 4em;
+#texto-sobre-nos > h1{
+    font-size: 5em;
 }
-#texto-imagem-principal > p{
+#texto-sobre-nos > h2{
     font-size: 3em;
 }
+#texto-sobre-nos > p{
+    font-size: 1.5em;
+    color: white;
+    width: 50%;
+    margin-top: 50px;
+}
+#texto-destaque{
+    color: var(--cor-de-fundo);
+}
 
-#sobre-nos{
+#castracao{
     background-color: var(--marrom-secundario);
     display: flex;
     justify-content: space-between;
@@ -95,7 +104,7 @@ nav > ul > li > a:hover{
     margin-bottom: 50px;   
 }
 
-#sobre-nos > aside{
+#castracao > aside{
     width: 600px;
     color: white;
     padding: 30px;
@@ -105,12 +114,12 @@ nav > ul > li > a:hover{
     flex-direction: column;
 
 }
-#sobre-nos > aside > h2{
+#castracao > aside > h2{
     margin-bottom: 30px;
     font-family: var(--fonte-titulo);
     font-size: 2em;
 }
-#sobre-nos > aside > p{
+#castracao > aside > p{
     margin-bottom: 30px;
     width: 80%;
     margin: auto;
