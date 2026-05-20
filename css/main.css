@@ -67,7 +67,7 @@ nav > ul > li > a:hover{
 }
 #texto-sobre-nos{
     padding: 100px;
-    background-color: rgba(0, 0, 0, 0.63);
+    background-color: rgba(0, 0, 0, 0.733);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -97,30 +97,33 @@ nav > ul > li > a:hover{
 }
 
 #castracao{
-    background-color: var(--marrom-secundario);
+    background-color: var(--cor-titulo);
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 50px;   
 }
 
-#castracao > aside{
-    width: 600px;
+#texto-castracao{
     color: white;
-    padding: 30px;
-    text-align: center;
+    padding: 50px;
     width: 50%;
     display: flex;
     flex-direction: column;
-
+    justify-content: space-between;
 }
-#castracao > aside > h2{
-    margin-bottom: 30px;
+#texto-castracao > h2{
     font-family: var(--fonte-titulo);
-    font-size: 2em;
-}
-#castracao > aside > p{
-    margin-bottom: 30px;
-    width: 80%;
+    font-size: 3em;
     margin: auto;
+}
+#texto-castracao > aside{
+    margin-top: 50px;
+}
+#texto-castracao > aside > p{
+    font-size: 1em;
+}
+#imagem-castracao{
+    height: 500px;
+    width: 50%;
 }
