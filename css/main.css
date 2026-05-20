@@ -3,7 +3,7 @@
 :root{ /* Isso são variáveis no CSS */
     --cor-de-fundo: #f29f05;
     --laranja-secundario-claro: #f28705;
-    --marrom-secundario: #412915;
+    --marrom-secundario: #734a27;
     --cor-titulo: #022859;
     --azul-claro: #1243a6;
     --fonte-titulo: "Nunito", sans-serif;
@@ -100,8 +100,7 @@ nav > ul > li > a:hover{
     background-color: var(--cor-titulo);
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 50px;   
+    align-items: center;  
 }
 
 #texto-castracao{
@@ -121,10 +120,46 @@ nav > ul > li > a:hover{
     margin-top: 50px;
 }
 #texto-castracao > aside > p{
-    font-size: 1em;
+    font-size: 1.2em;
 }
 #imagem-castracao{
-    height: 500px;
+    height: 600px;
     width: 50%;
 }
-aside
+#perguntas-frequentes{
+    margin-top: 30px;
+}
+#perguntas-frequentes > h2{
+    text-align: center;
+    font-size: 3em;
+    font-family: var(--fonte-titulo);
+    color: var(--cor-titulo);
+    font-weight: 900;
+}
+#perguntas-frequentes-posicionamento{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-image: url(../img/fundo-faq.png);
+}
+.caixas-perguntas-frequentes{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    background-color: var(--cor-titulo);
+    color: black;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.caixas-perguntas-frequentes > h3{
+    background-color: var(--azul-claro);
+    padding: 10px;
+    color: white;
+    font-family: var(--fonte-titulo);
+    font-size: 1.8em;
+}
+.caixas-perguntas-frequentes > p, li{
+    padding: 10px;
+    color: white;
+}
