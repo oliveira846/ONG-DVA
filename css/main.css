@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
 :root{ /* Isso são variáveis no CSS */
     --cor-de-fundo: #f29f05;
     --laranja-secundario-claro: #f28705;
     --marrom-secundario: #734a27;
     --cor-titulo: #022859;
     --azul-claro: #1243a6;
-    --fonte-titulo: "Nunito", sans-serif;
+    --fonte-titulo: "Montserrat", sans-serif;
+    --fonte-ssecundaria: "Poppins", sans-serif;
 }
 
 *{  /* Isso é reset no CSS da página, então eu deixei todos os itens com 0 de margin e padding, fica mais fácil de trabalhar */
@@ -18,17 +25,21 @@ body{
     background-color: var(--cor-de-fundo); /* Como se utiliza a varivel */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+/* Começo do header */
+
 header{
     padding: 15px 70px;
     display: flex; /* Isso é um posicionamento de página chamado Flexbox */
     justify-content: space-between; /* esse justify é uma forma de falar pro flex box, como vai ficar o posicionamento */
 }
-#logo-customizada{
+.logo-customizada{
     border-radius: 50%; /* Arredondamento das bordas do bloco */
     width: 65px;
     height: 65px;
     /*border: 2px solid black; /* borda */
     box-shadow: 0px 0px 20px black;
+    align-self: center;
 }
 nav{
     width: 700px;
@@ -57,6 +68,9 @@ nav > ul > li > a:hover{
     background-color: var(--marrom-secundario);
     color: #f29f05;
 }
+
+/* Começo do main */
+
 #sobre-nos{
     width: 100%;
     height: 800px;
@@ -97,16 +111,19 @@ nav > ul > li > a:hover{
 }
 
 #castracao{
+    height: 700px;
     background-color: var(--cor-titulo);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;  
+    background-image: url(../img/dog-background.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+      
+    box-shadow: 0px 0px 30px black;
 }
 
 #texto-castracao{
     color: white;
     padding: 50px;
-    width: 50%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -114,17 +131,23 @@ nav > ul > li > a:hover{
 #texto-castracao > h2{
     font-family: var(--fonte-titulo);
     font-size: 3em;
-    margin: auto;
+    margin-bottom: 30px;
 }
-#texto-castracao > aside{
-    margin-top: 50px;
-}
-#texto-castracao > aside > p{
+#texto-castracao > p{
     font-size: 1.2em;
 }
-#imagem-castracao{
-    height: 600px;
-    width: 50%;
+#link-saiba-mais-castracao{
+    text-decoration: none;
+    background-color: var(--cor-de-fundo);
+    width: 250px;
+    text-align: center;
+    font-family: var(--fonte-titulo);
+    font-size: 2em;
+    font-weight: bolder;
+    color: var(--cor-titulo);
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 30px;
 }
 #perguntas-frequentes{
     margin-top: 30px;
@@ -140,10 +163,10 @@ nav > ul > li > a:hover{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    background-image: url(../img/fundo-faq.png);
+
 }
 .caixas-perguntas-frequentes{
-    width: 800px;
+    width: 60%;
     display: flex;
     flex-direction: column;
     margin: 20px;
@@ -162,4 +185,41 @@ nav > ul > li > a:hover{
 .caixas-perguntas-frequentes > p, li{
     padding: 10px;
     color: rgb(240, 239, 239);
+}
+#localizacao{
+    margin-top: 50px;
+    text-align: center;
+    background-color: var(--cor-titulo);
+    padding: 30px 0px;
+}
+#localizacao > h2{
+    font-family: var(--fonte-titulo);
+    font-size: 3em;
+    margin-bottom: 30px;
+    color: var(--cor-de-fundo);
+}
+/* Começo do footer */
+
+footer{
+    background-color: var(--marrom-secundario);
+    color: white;
+    padding: 0px 10px 10px 10px;
+    text-align: center;
+}
+#posicao-footer{
+    display: flex;
+    justify-content: space-around;
+}
+.bi {
+    color: white;
+    font-size: 30px;
+    margin: 5px 5px 5px 0px;
+}
+.footer-box > h3{
+    margin-bottom: 5px;
+    font-size: 1.5em;
+}
+.contato{
+    display: flex;
+    align-items: center;
 }
