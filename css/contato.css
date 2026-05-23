@@ -1,0 +1,28 @@
+
+
+main{
+    background-color: var(--cor-titulo);
+}
+
+#contato-conteudo{
+    width: 80%;
+    margin: auto;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+#contato-conteudo > h1{
+    color: var(--cor-de-fundo);
+    font-family: var(--fonte-titulo);
+    font-weight: 900;
+    font-size: 5em;
+}
+#contato-conteudo > p{
+    font-weight: bold;
+    font-family: var(--fonte-secundaria);
+    font-size: 2.5em;
+    width: 50%;
+    color: white;
+}

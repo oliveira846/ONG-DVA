@@ -13,7 +13,7 @@
     --cor-titulo: #022859;
     --azul-claro: #1243a6;
     --fonte-titulo: "Montserrat", sans-serif;
-    --fonte-ssecundaria: "Poppins", sans-serif;
+    --fonte-secundaria: "Poppins", sans-serif;
 }
 
 *{  /* Isso é reset no CSS da página, então eu deixei todos os itens com 0 de margin e padding, fica mais fácil de trabalhar */
@@ -32,6 +32,7 @@ header{
     padding: 15px 70px;
     display: flex; /* Isso é um posicionamento de página chamado Flexbox */
     justify-content: space-between; /* esse justify é uma forma de falar pro flex box, como vai ficar o posicionamento */
+    border-bottom: 2px solid black;
 }
 .logo-customizada{
     border-radius: 50%; /* Arredondamento das bordas do bloco */
@@ -53,20 +54,20 @@ nav > ul{
     display: flex;
     justify-content: space-between;
     list-style-type: none; /* Isso aqui tira as bolinhas que ficam quando se cria a lista */
-    font-family: var(--fonte-titulo); /* Exemplo de como se utiliza uma varivel de fonte */
+    font-family: var(--fonte-secundaria); /* Exemplo de como se utiliza uma varivel de fonte */
     font-weight: bold;
     font-size: 1.3em; /* "em" é um tipo de medida, como o px por exemplo */
     
-}nav > ul > li > a{
+}
+nav > ul > li > a{
     transition: 0.5s; /* transition serve para dizer o tempo que a animação do hover, vai durar, quanto mais você colocar, mas lento vai ficar a transição para a propriedade que foi colocada no hover */
     padding: 10px 17px;
-    border-radius: 10px;
+    border-radius: 20px;
     color: black;
     text-decoration: none; /* o link fica com um faixa embaixo como padrão, isso aqui tira essa faixa */
 }
 nav > ul > li > a:hover{
-    background-color: var(--marrom-secundario);
-    color: #f29f05;
+    box-shadow: 0px 0px 30px black;
 }
 
 /* Começo do main */
@@ -95,35 +96,37 @@ nav > ul > li > a:hover{
     font-weight: 900;
 }
 #texto-sobre-nos > h1{
-    font-size: 5em;
+    font-size: 5em;    
 }
 #texto-sobre-nos > h2{
     font-size: 3em;
+    margin-bottom: 40px;
 }
 #texto-sobre-nos > p{
     font-size: 1.5em;
     color: white;
     width: 50%;
-    margin-top: 50px;
 }
 #texto-destaque{
     color: var(--cor-de-fundo);
 }
 
 #castracao{
-    height: 700px;
+    
     background-color: var(--cor-titulo);
     background-image: url(../img/dog-background.png);
     background-repeat: no-repeat;
     background-position: right bottom;
-      
+    background-size: 400px;
+
     box-shadow: 0px 0px 30px black;
 }
 
 #texto-castracao{
     color: white;
-    padding: 50px;
-    width: 70%;
+    margin: auto;
+    padding: 50px 0px;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -135,6 +138,8 @@ nav > ul > li > a:hover{
 }
 #texto-castracao > p{
     font-size: 1.2em;
+    margin-bottom: 5px;
+    width: 90%;
 }
 #link-saiba-mais-castracao{
     text-decoration: none;
@@ -166,7 +171,7 @@ nav > ul > li > a:hover{
 
 }
 .caixas-perguntas-frequentes{
-    width: 60%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     margin: 20px;
@@ -201,10 +206,12 @@ nav > ul > li > a:hover{
 /* Começo do footer */
 
 footer{
-    background-color: var(--marrom-secundario);
+    background-color: var(--azul-claro);
     color: white;
     padding: 0px 10px 10px 10px;
     text-align: center;
+    padding: 30px;
+    border-top: 3px solid black;
 }
 #posicao-footer{
     display: flex;
