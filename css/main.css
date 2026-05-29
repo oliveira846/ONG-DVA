@@ -33,6 +33,7 @@ header{
     display: flex; /* Isso é um posicionamento de página chamado Flexbox */
     justify-content: space-between; /* esse justify é uma forma de falar pro flex box, como vai ficar o posicionamento */
     border-bottom: 2px solid black;
+    background-color: var(--azul-claro);
 }
 .logo-customizada{
     border-radius: 50%; /* Arredondamento das bordas do bloco */
@@ -63,43 +64,47 @@ nav > ul > li > a{
     transition: 0.5s; /* transition serve para dizer o tempo que a animação do hover, vai durar, quanto mais você colocar, mas lento vai ficar a transição para a propriedade que foi colocada no hover */
     padding: 10px 17px;
     border-radius: 20px;
-    color: black;
+    color: white;
     text-decoration: none; /* o link fica com um faixa embaixo como padrão, isso aqui tira essa faixa */
 }
 nav > ul > li > a:hover{
-    box-shadow: 0px 0px 30px black;
+    color: var(--cor-de-fundo);
 }
 
 /* Começo do main */
-
+h2{
+    font-size: 3em;
+    font-family: var(--fonte-titulo);
+    font-weight: 900;
+}
 #sobre-nos{
     width: 100%;
     height: 800px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(../img/ong-dva-entrada.jpg);
+    background-image: url(../img/ong-dva-entrada.png);
 }
 #texto-sobre-nos{
-    padding: 100px;
-    background-color: rgba(0, 0, 0, 0.733);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
+    margin: auto;
+    width: 80%;
     height: 100%;
 }
-#texto-sobre-nos > h1, 
-#texto-sobre-nos > h2{
+#texto-sobre-nos > h1{
     color: white;
     font-family: var(--fonte-titulo);
     font-weight: 900;
+}
+#texto-sobre-nos > h2{
+    color: white;
 }
 #texto-sobre-nos > h1{
     font-size: 5em;    
 }
 #texto-sobre-nos > h2{
-    font-size: 3em;
     margin-bottom: 40px;
 }
 #texto-sobre-nos > p{
@@ -132,8 +137,6 @@ nav > ul > li > a:hover{
     justify-content: space-between;
 }
 #texto-castracao > h2{
-    font-family: var(--fonte-titulo);
-    font-size: 3em;
     margin-bottom: 30px;
 }
 #texto-castracao > p{
@@ -156,17 +159,10 @@ nav > ul > li > a:hover{
 }
 #perguntas-frequentes{
     margin-top: 30px;
-    background-image: url(../img/cleber.png);
-    background-repeat: no-repeat;
-    background-position-x: 1580px;
-    background-attachment: fixed;
 }
 #perguntas-frequentes > h2{
     text-align: center;
-    font-size: 3.8em;
-    font-family: var(--fonte-titulo);
-    color: var(--cor-titulo);
-    font-weight: 900;
+    color: var(--cor-titulo);   
 }
 #perguntas-frequentes-posicionamento{
     display: flex;
@@ -185,20 +181,20 @@ nav > ul > li > a:hover{
     overflow: hidden;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.61);
 }
-.caixas-perguntas-frequentes > h3{
+.caixas-perguntas-frequentes > div > h3{
     background-color: var(--azul-claro);
     padding: 10px;
     color: white;
     font-family: var(--fonte-titulo);
     font-size: 1.8em;
 }
-.caixas-perguntas-frequentes > p{
+.caixas-perguntas-frequentes > div > p{
     padding: 20px;
     color: rgb(240, 239, 239);
     font-size: 1.2em;
     font-weight: bold;
 }
-.caixas-perguntas-frequentes > ul{
+.caixas-perguntas-frequentes > div > ul{
     padding: 20px;
     color: rgb(240, 239, 239);
     font-size: 1.2em;
@@ -211,8 +207,6 @@ nav > ul > li > a:hover{
     padding: 30px 0px;
 }
 #localizacao > h2{
-    font-family: var(--fonte-titulo);
-    font-size: 3em;
     margin-bottom: 30px;
     color: var(--cor-de-fundo);
 }
@@ -231,7 +225,7 @@ footer{
     justify-content: space-around;
 }
 .bi {
-    color: white;
+    color: var(--cor-de-fundo);
     font-size: 30px;
     margin: 5px 5px 5px 0px;
 }
@@ -242,4 +236,7 @@ footer{
 .contato{
     display: flex;
     align-items: center;
+}
+.resposta-pergunta-frequente{
+    display: none;
 }
