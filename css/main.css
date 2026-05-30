@@ -187,17 +187,13 @@ h2{
     font-family: var(--fonte-titulo);
     font-size: 1.8em;
 }
-.caixas-perguntas-frequentes > div > p{
-    padding: 20px;
-    color: rgb(240, 239, 239);
-    font-size: 1.2em;
-    font-weight: bold;
-}
+.caixas-perguntas-frequentes > div > p,
 .caixas-perguntas-frequentes > div > ul{
     padding: 20px;
     color: rgb(240, 239, 239);
     font-size: 1.2em;
     font-weight: bold;
+    list-style-position: inside;
 }
 #localizacao{
     margin-top: 50px;
