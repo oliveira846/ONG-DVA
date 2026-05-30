@@ -15,3 +15,60 @@
     --fonte-titulo: "Montserrat", sans-serif;
     --fonte-secundaria: "Poppins", sans-serif;
 }
+
+body{
+    color: white;
+}
+
+
+.caixa-texto > p > a{
+    color: var(--cor-de-fundo);
+    text-decoration: none;
+}
+
+.caixa-texto > p > a:hover{
+    color: var(--laranja-secundario-claro);
+}
+main > div > h1{
+    color: var(--cor-titulo);
+}
+main > div > h1, .caixa-titulo > h2{
+    text-align: center;
+    font-family: var(--fonte-titulo);
+}
+
+.caixa-texto > p, .caixa-texto > ul, ol > li{
+    font-family: var(--fonte-secundaria);
+    font-size: 20px;
+}
+
+
+main > div{
+    margin: 2%;
+}
+
+.caixa-texto > ul, ol{
+    margin: 0.5% 2%;
+}
+
+
+.caixa-titulo{
+    width: 80%;
+    margin: auto;
+    background-color: var(--cor-titulo);
+    padding: 10px;
+
+}
+
+.caixa-texto{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: var(--azul-claro);
+    padding: 20px;
+}
+.alinhar{
+    display: inline;
+    margin-left: 20%;
+}
+

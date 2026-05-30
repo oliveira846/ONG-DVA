@@ -27,18 +27,29 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 30px;
+    
+    
+    overflow: hidden;
 }
 #contato-conteudo > h1{
-    color: var(--cor-titulo);
+
+    background-color: var(--cor-titulo);
+    color: white;
     font-family: var(--fonte-titulo);
     font-weight: 900;
     font-size: 5em;
+    padding: 20px;
 }
-#contato-conteudo > p{
+#contato-texto{
+
+    background-color: var(--azul-claro);
     font-weight: bold;
     font-family: var(--fonte-secundaria);
     font-size: 2.5em;
-    width: 50%;
-    color: black;
+    color: white;
+    padding: 20px;
+}
+
+#contato-texto > p{
+    margin-bottom: 20px;
 }
