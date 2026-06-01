@@ -28,8 +28,25 @@
 
     <main>
         <div>
-            <h1>Doações</h1>
+            <h1 class="titulo-h1">Doações</h1>
         </div>
+        <section class="hero-doacao">
+            <div class="overlay"></div>
+
+            <div class="conteudo">
+               <h1>
+    <span class="titulo-branco">SUA AJUDA</span><br>
+    <span class="titulo-amarelo">SALVA VIDAS</span>
+</h1>
+                <p>Cada doação é um passo para uma nova chance.
+                    Seu apoio fornece alimentação, cuidados veterinários e o carinho necessário para que nossos animais encontrem um lar para sempre.
+                </p>
+            </div>
+        </section>
+                  
+        <br>
+        <br>
+
         
         <aside class="caixas-doacoes">
             <div class="caixa-titulo">
@@ -37,9 +54,36 @@
             </div>
 
             <div class="caixa-texto">
-                <p class="alinhar"><strong>PIX:</strong> 07.145.094/0001-36</p>
-                <img class="alinhar" src="" alt="código qr code para doação via pix">
-            </div>
+    <p class="alinhar">
+     PIX: <strong>CNPJ:</strong> 07.145.094/0001-36
+    </p>
+
+    <img class="alinhar" src="img/qrcode-pix.png"
+         alt="Código QR Code de doação online via PIX para a ONG DVA">
+
+    <h3>Pix Copia e Cola:</h3>
+
+<input
+    type="text"
+    id="codigoPix"
+    value="00020126360014BR.GOV.BCB.PIX0114071450940001365204000053039865802BR5901N6001C62070503***63049774"
+    readonly
+>
+
+<button onclick="copiarPix()">📋 Copiar Pix</button>
+
+<script>
+function copiarPix() {
+    const pix = document.getElementById("codigoPix");
+
+    navigator.clipboard.writeText(pix.value)
+        .then(() => {
+            alert("Pix copiado com sucesso!");
+        });
+}
+</script>
+
+</div>
         </aside>
     
         <aside class="caixas-doacoes">
@@ -58,22 +102,59 @@
             </div>
 
             <div class="caixa-texto">
-                <p>Pode ser feita de forma <strong>prensencial</strong> de <strong>segunda a sexta</strong> no local da ONG DVA:</p>
-                <ul>
-                <li>Endereço: R. Alm. Tamandaré, 136 </li>
-                <li>CEP: 11015-250</li>
-                <li>Horário: 9h - 12h</li>
-                </ul>
+                <p>Doações presenciais de <strong>segunda a sexta</strong> na ONG DVA:</p>
 
-                <p>Aceitamos doação de <strong>itens de todo tipo!</strong> entre eles:</p>
+<div class="localizacao-box">
 
-                <ul>
-                <li >Ração de boa qualidade (para cães e gatos)</li>
-                <li >Jornal</li>
-                <li >Materiais de limpeza</li>
-                <li >Lençóis e toalhas</li>
-                <li >Medicamentos (dentro do prazo de validade)</li>
-                </ul>
+    <div class="info-localizacao">
+
+        <p>
+            <i class="bi bi-geo-alt-fill"></i>
+            <strong>Endereço:</strong> R. Alm. Tamandaré, 136
+        </p>
+
+        <p>
+            <i class="bi bi-mailbox"></i>
+            <strong>CEP:</strong> 11015-250
+        </p>
+
+        <p>
+            <i class="bi bi-clock-fill"></i>
+            <strong>Horário:</strong> 9h - 12h
+        </p>
+
+        <a
+            href="https://maps.google.com/?q=R.+Almirante+Tamandare+136+Santos+SP"
+            target="_blank"
+            class="link-mapa"
+        >
+            <i class="bi bi-map-fill"></i>
+            Ver localização no Google Maps
+        </a>
+
+    </div>
+
+    <iframe
+        class="mini-mapa"
+        src="https://maps.google.com/maps?q=R.%20Alm.%20Tamandar%C3%A9%20136%20Santos&t=&z=16&ie=UTF8&iwloc=&output=embed"
+        loading="lazy">
+    </iframe>
+
+</div>
+
+<p>Aceitamos doação de <strong>itens de todo tipo!</strong> entre eles:</p>
+
+<ul class="lista-doacoes">
+<li><i class="bi bi-bag-fill"></i> Ração de boa qualidade (para cães e gatos)</li>
+
+<li><i class="bi bi-newspaper"></i> Jornal</li>
+
+<li><i class="bi bi-droplet-fill"></i> Materiais de limpeza</li>
+
+<li><i class="bi bi-layers-fill"></i> Lençóis e toalhas</li>
+
+<li><i class="bi bi-capsule"></i> Medicamentos (dentro do prazo de validade)</li>
+</ul>
         </aside>
 
         <aside class="caixas-doacoes">
@@ -86,7 +167,7 @@
 
             <ol>
             <li>Acesse o link:  <a href="https://www.nfp.fazenda.sp.gov.br/" target="_blank">https://www.nfp.fazenda.sp.gov.br/</a> e entre com seu login </p>
-            <img src="img/Captura de tela 2026-05-21 183510.png" alt="imagem do site da nota fiscal paulista">
+            <img src="img/nota-fiscal.png" alt="imagem do site da nota fiscal paulista">
             <li>Digite o CNPJ: 07.145.094/0001-36</p>
             <li>Clique em:  doação automática</p>
             <li>Selecione a ONG DVA e confirme</p>
@@ -99,8 +180,8 @@
             <img src="img/logo.jpg" alt="logo da ONG DVA" class="logo-customizada">
             <aside class="footer-box">
                 <h3>Redes Sociais</h3>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href="https://web.facebook.com/ongdva/?locale=pt_BR&_rdc=1&_rdr" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/ongdva/" target="_blank"><i class="bi bi-instagram"></i></a>
             </aside>
             <aside class="footer-box">
                 <h3>Contato</h3>

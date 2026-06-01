@@ -1,0 +1,100 @@
+
+    :root{ /* Isso são variáveis no CSS */
+    --cor-de-fundo: #f0b64c;
+    --laranja-secundario-claro: #f28705;
+    --marrom-secundario: #734a27;
+    --cor-titulo: #273e5c;
+    --azul-claro: #385da7;
+    --fonte-titulo: "Montserrat", sans-serif;
+    --fonte-secundaria: "Poppins", sans-serif;
+}
+
+
+
+main{
+    width: 80%;
+    margin: auto;
+}
+
+h1{
+    margin-top: 25px;
+    color: var(--cor-titulo);
+    text-align: center;
+}
+
+h2{
+    background-color: var(--cor-titulo);
+    color:#fff;
+    text-align: center;
+}
+
+.blocoescuro{
+    margin-top: 25px;
+    background-color: var(--cor-titulo);
+    text-align: center;
+    border-radius: 5px 5px 0px 0px;
+    overflow: hidden;
+}
+
+
+.blococlaro{
+    background-color: var(--azul-claro);
+}
+
+.blococlaro{
+    font-family: var(--fonte-secundaria);
+    color: #fff;
+    text-align: left;
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 10px 20px;
+    font-size:25px;
+    line-height: 1.6;
+
+    border-radius: 0px 0px 5px 5px;
+}
+
+.conteudo-sobre{
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start ;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+
+.texto-sobre{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 55%;
+    padding-top: 10px;
+}
+
+.video{
+    display:flex;
+    justify-content: flex-end;
+    flex: 0 0 40%;
+    max-width:480px;
+    align-self: stretch;
+    overflow: hidden;
+}
+
+/* Div da galeria provisorio até o carrossel */
+
+.galeria {
+    display: flex; /* coloca as imagens lado a lado*/
+    flex-wrap: nowrap; /* Vai quebrar a linha se não couber*/
+    overflow: scroll;
+    
+    gap: 10px; /* o gap entre as fotos*/
+    background-color: var(--azul-claro);
+    padding: 10px 0px;
+}
+
+.chamadadoacoes{
+    text-align: center;
+    padding: 30px 60px;
+    font-size: 22px;
+}

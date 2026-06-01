@@ -194,7 +194,7 @@ h1{
     width: 80%;
     margin: auto;
     display: flex;
-    justify-content: flex-end;
+    
 }
 #servicos-prestados{
     float: right;
@@ -207,9 +207,6 @@ h1{
     border-top: 2px solid black;
     position: relative;
     overflow: hidden;
-}
-#secao-como-ajudar{
-    
 }
 .lista-infografico{
     list-style-position: inside;
@@ -307,7 +304,7 @@ footer{
     justify-content: space-around;
 }
 .bi {
-    color: black;
+    color: white;
     font-size: 30px;
     margin: 5px 5px 5px 0px;
 }
@@ -345,8 +342,18 @@ footer{
     text-decoration: none;
 }
 
-.bi-whatsapp{
-    color: black;
-}
+
 
 /* Whatsapp */
+
+.titulo-h1{
+    font-family: var(--fonte-titulo);
+    color: #ffffff;
+    text-align: center;
+    font-size: 60px;
+    background-color: var(--cor-titulo);
+    width: 800px;
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}

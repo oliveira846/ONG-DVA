@@ -10,105 +10,106 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <title>ONG DVA - Sobre</title>
     <style>
-    :root{ /* Isso são variáveis no CSS */
-    --cor-de-fundo: #f0b64c;
-    --laranja-secundario-claro: #f28705;
-    --marrom-secundario: #734a27;
-    --cor-titulo: #273e5c;
-    --azul-claro: #385da7;
-    --fonte-titulo: "Montserrat", sans-serif;
-    --fonte-secundaria: "Poppins", sans-serif;
-}
+            :root{ /* Isso são variáveis no CSS */
+            --cor-de-fundo: #f0b64c;
+            --laranja-secundario-claro: #f28705;
+            --marrom-secundario: #734a27;
+            --cor-titulo: #273e5c;
+            --azul-claro: #385da7;
+            --fonte-titulo: "Montserrat", sans-serif;
+            --fonte-secundaria: "Poppins", sans-serif;
+        }
 
 
 
-main{
-    width: 80%;
-    margin: auto;
-}
+        main{
+            width: 80%;
+            margin: auto;
+        }
 
-h1{    
-    background-color: var(--cor-titulo);
-    color:#fff;
-    text-align: center;
-    display: inline-block;
-    padding: 5px 15px;  
-}
+        h1{
+            margin-top: 25px;
+            color: var(--cor-titulo);
+            text-align: center;
+        }
 
-h2{
-    background-color: var(--cor-titulo);
-    color:#fff;
-    text-align: center;
-}
+        h2{
+            background-color: var(--cor-titulo);
+            color:#fff;
+            text-align: center;
+        }
 
-.blocoescuro{
-    margin-top: 25px;
-    background-color: var(--cor-titulo);
-    text-align: center;
-}
-
-
-.blococlaro{
-    background-color: var(--azul-claro);
-}
-
-.blococlaro{
-    font-family: var(--fonte-secundaria);
-    font-weight: 600;
-    color: #fff;
-    text-align: left;
-    margin-bottom: 30px;
-    width: 100%;
-    padding: 10px 20px;
-    font-size:25px;
-    line-height: 1.6;
-}
-
-.conteudo-sobre{
-    display:flex;
-    flex-direction: row;
-    align-items: flex-start ;
-    justify-content: center;
-    gap: 30px;
-    padding: 20px;
-}
+        .blocoescuro{
+            margin-top: 25px;
+            background-color: var(--cor-titulo);
+            text-align: center;
+            border-radius: 5px 5px 0px 0px;
+            overflow: hidden;
+        }
 
 
-.texto-sobre{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    max-width: 55%;
-    padding-top: 10px;
-}
+        .blococlaro{
+            background-color: var(--azul-claro);
+        }
 
-.video{
-    display:flex;
-    justify-content: flex-end;
-    flex: 0 0 40%;
-    max-width:480px;
-    align-self: stretch;
-    overflow: hidden;
-}
+        .blococlaro{
+            font-family: var(--fonte-secundaria);
+            color: #fff;
+            text-align: left;
+            margin-bottom: 30px;
+            width: 100%;
+            padding: 10px 20px;
+            font-size:25px;
+            line-height: 1.6;
 
-/* Div da galeria provisorio até o carrossel */
+            border-radius: 0px 0px 5px 5px;
+        }
 
-.galeria {
-    display: flex; /* coloca as imagens lado a lado*/
-    flex-wrap: nowrap; /* Vai quebrar a linha se não couber*/
-    overflow: scroll;
-    
-    gap: 10px; /* o gap entre as fotos*/
-    background-color: var(--azul-claro);
-    padding: 10px 0px;
-}
+        .conteudo-sobre{
+            display:flex;
+            flex-direction: row;
+            align-items: flex-start ;
+            justify-content: center;
+            gap: 30px;
+            padding: 20px;
+        }
 
-.chamadadoacoes{
-    text-align: center;
-    padding: 30px 60px;
-    font-size: 22px;
-}
-</style>
+
+        .texto-sobre{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            max-width: 55%;
+            padding-top: 10px;
+        }
+
+        .video{
+            display:flex;
+            justify-content: flex-end;
+            flex: 0 0 40%;
+            max-width:480px;
+            align-self: stretch;
+            overflow: hidden;
+        }
+
+        /* Div da galeria provisorio até o carrossel */
+
+        .galeria {
+            display: flex; /* coloca as imagens lado a lado*/
+            flex-wrap: nowrap; /* Vai quebrar a linha se não couber*/
+            overflow: scroll;
+            
+            gap: 10px; /* o gap entre as fotos*/
+            background-color: var(--azul-claro);
+            padding: 10px 0px;
+        }
+
+        .chamadadoacoes{
+            text-align: center;
+            padding: 30px 60px;
+            font-size: 22px;
+        }
+    </style>
 
 </head>
 <body>
@@ -129,6 +130,8 @@ h2{
     </header>
 
     <main>
+
+        <h1 class="titulo-h1">Sobre nós</h1>
         <!-- bloco do h1 -->
         <div class="blocoescuro">
 
@@ -198,8 +201,8 @@ h2{
             <img src="img/logo.jpg" alt="logo da ONG DVA" class="logo-customizada">
             <aside class="footer-box">
                 <h3>Redes Sociais</h3>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href="https://web.facebook.com/ongdva/?locale=pt_BR&_rdc=1&_rdr" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/ongdva/" target="_blank"><i class="bi bi-instagram"></i></a>
             </aside>
             <aside class="footer-box">
                 <h3>Contato</h3>

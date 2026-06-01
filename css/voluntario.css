@@ -30,30 +30,45 @@ body{
     
     
 }
+.intro-voluntario{
+    text-align: center;
+    color: #fff;
+    font-size: 1.1rem;
+    margin: 10px 0 30px;
+}
 
 .titulo-voluntario{
     font-family: var(--fonte-titulo);
-    color: #000000;
+    color: #ffffff;
     text-align: center;
-}  
+    font-size: 60px;
+    background-color: var(--cor-titulo);
+    width: 800px;
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
 
+.texto-voluntario{
+    margin-top: 15px;
+}
 .caixa-voluntario{
     display: flex;
     
     justify-content: center;
     align-items: center;
     
-    margin: 0px 10px 10px 40px;
+    margin: 20px 10px 10px 40px;
 
     background-color: var(--cor-de-fundo);
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     color: var(--marrom-secundario);
     font-weight: bold;
 }
 
 .caixa-voluntario > p{
-    font-size: 35px;
+    font-size: 25px;
     color: #251100;
 }
 
@@ -62,27 +77,30 @@ body{
     background-color: var(--cor-titulo);
     padding: 10px;
     display: flex;
+    border-radius: 5px;
 }
 
 .borda-voluntario{
     border: 3px solid var(--azul-claro);
     border-radius: 5px;
-    width: 50%;
+    width: 100%;
+    padding: 10px;
 }
 
 .h2-voluntariado{
 color: #ffffff;
-font-size: 40px;
+font-size: 35px;
 margin-bottom: 20px;
-text-align: center;
+margin-left: 40px;
 }
 
 .imagem-voluntario{
-    width: 50%;
-    object-fit: cover;
-    align-items: center;
-    justify-content: center;
-
+    width: 90%;
+    display: flex;
+    margin-left: auto;
+    padding-left: 20px;
+    margin-right: auto;
+    border: 1px;  
 
 }
 
@@ -110,15 +128,19 @@ text-align: center;
     font-size: 25px;
     color: #ffffff;
     margin-right: 15px;
-    padding: 5px;
     margin-bottom: 10px;
-    /* fiz no chat mauricio vibe coding */
+    padding: 10px 0px;
+    border-bottom: 1.5px solid var(--cor-de-fundo);
+
+
+}
+.lista-afazeres>li:last-child{
+    border-bottom: none;
+    padding: 0px 0px;
 }
 
 
-hr{
-    color: #8b5c16;
-}
+
 
 .lista-afazeres>p{
     color: white;
@@ -126,9 +148,10 @@ hr{
 
 }
 .h3-voluntariado{
-    color: white;
-    font-size: 40px;
+    color: rgb(255, 255, 255);
+    font-size: 37px;
     margin-bottom: 30px;
+
 }
 
 .laranja
@@ -144,6 +167,7 @@ hr{
      color: white;
     font-size: 50px;
     margin-bottom: 30px;   
+    
 }
 
 .aside-voluntario{
@@ -155,7 +179,7 @@ hr{
 }
 
 .aside-voluntario h3{
-    font-size: 30px;
+    font-size: 40px;
     margin-bottom: 10px;
 }
 
@@ -165,7 +189,9 @@ hr{
 
 .frase-debaixoh3{
     color: white;
+    font-size: 20px;
 }
 .encima-frasep{
     color: white;
+    font-size: 25;
 }
