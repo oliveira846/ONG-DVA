@@ -43,15 +43,13 @@ h1{
     color: var(--laranja-secundario-claro);
 }
 
-
-
 main > div > h1, .caixa-titulo > h2{
     text-align: center;
     font-family: var(--fonte-titulo);
 }
 
 .caixa-titulo > h2{
-    color: white;
+    color: var(--cor-de-fundo);
     font-size: 50px;
 }
 
@@ -80,11 +78,13 @@ main > div{
     background-color: var(--azul-claro);
     padding: 40px;
     border-radius: 0px 0px 5px 5px;
+    padding-top: 30px;
+    position: relative;
 }
 
 .alinhar{
     display: inline;
-    margin-left: 1%;
+    margin-left: 0px;
 }
 
 .hero-doacao{
@@ -239,3 +239,93 @@ button {
     }
 
 }
+
+.btn-pix{
+    background: #00B388; /* cor semelhante ao Pix */
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    margin-top: 25px;
+}
+
+.btn-pix:hover{
+    background: #009c76;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.icone-pix{
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.img-nota{
+    width: 60%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+
+}
+
+.qr-pix{
+    width: 160px;
+    height: auto;
+    float: right;
+    margin-right: 50px;
+}
+
+.btn-paypal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    width: 350px;
+    padding: 16px;
+
+    background: #ffd140;
+    color: #003087;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    text-decoration: none;
+
+    border-radius: 50px;
+
+    margin-top: 25px;
+    margin-left: 0px;
+
+    transition: 0.3s;
+}
+
+.btn-paypal:hover{
+    transform: scale(1.03);
+}
+
+.icone-paypal{
+    width: 35px;
+}
+
+.imagem-centro{
+    width: 140px;
+    display: block;
+    margin: 20px auto 0 auto;
+}
+
+/* .gatinho-ajuda{
+    width: 180px;
+    position: relative;
+    left: 140px;
+    top: -30px;
+} */

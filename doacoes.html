@@ -58,19 +58,33 @@
      PIX: <strong>CNPJ:</strong> 07.145.094/0001-36
     </p>
 
-    <img class="alinhar" src="img/qrcode-pix.png"
-         alt="Código QR Code de doação online via PIX para a ONG DVA">
+    <img
+    class="alinhar qr-pix"
+    src="https://i.ibb.co/m5dhcbJH/qrcode-pix.png"
+    alt="QR Code Pix">
 
-    <h3>Pix Copia e Cola:</h3>
+    <h3>
+    <i class="bi bi-qr-code"></i>
+    Pix Copia e Cola
+</h3>
+
+<button class="btn-pix" onclick="copiarPix()">
+    <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLERQOgI2GmuLgYkrP28QVyZiH6CuafQaqrg&s"
+        class="icone-pix"
+        alt="Pix"
+    >
+    Copiar chave Pix
+</button>
+
+<!-- <img src="https://i.ibb.co/twFVw34z/gatinho-Pedindo.png" class="gatinho-ajuda" alt="Gatinho pedindo ajuda"> -->
 
 <input
-    type="text"
+    type="hidden"
     id="codigoPix"
     value="00020126360014BR.GOV.BCB.PIX0114071450940001365204000053039865802BR5901N6001C62070503***63049774"
-    readonly
 >
 
-<button onclick="copiarPix()">📋 Copiar Pix</button>
 
 <script>
 function copiarPix() {
@@ -78,7 +92,12 @@ function copiarPix() {
 
     navigator.clipboard.writeText(pix.value)
         .then(() => {
-            alert("Pix copiado com sucesso!");
+            const botao = document.querySelector(".btn-pix");
+
+botao.innerHTML = '<i class="bi bi-check-circle-fill"></i> Pix copiado!';
+setTimeout(() => {
+    botao.innerHTML = '<i class="bi bi-copy"></i> Copiar chave Pix';
+}, 2000);
         });
 }
 </script>
@@ -93,6 +112,19 @@ function copiarPix() {
 
             <div class="caixa-texto">
             <p><a href="contato.html">Contate-nos</a> para tornar-se um associado!: Contribuir mensalmente com qualquer valor através de Pix ou boleto</p>
+            <a
+    href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=MDB3HL9W6LM8N&source=url&ssrt=1680696559069"
+    target="_blank"
+    class="btn-paypal"
+>
+    <img
+        src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg"
+        alt="PayPal"
+        class="icone-paypal"
+    >
+
+    Doe com PayPal
+</a>
             </div>
         </aside>
 
@@ -166,8 +198,8 @@ function copiarPix() {
             <p><strong>Quer doar sua nota fiscal para a DVA?</strong> Siga os passos abaixo:</p>
 
             <ol>
-            <li>Acesse o link:  <a href="https://www.nfp.fazenda.sp.gov.br/" target="_blank">https://www.nfp.fazenda.sp.gov.br/</a> e entre com seu login </p>
-            <img src="img/nota-fiscal.png" alt="imagem do site da nota fiscal paulista">
+            <li>Acesse <a href="https://www.nfp.fazenda.sp.gov.br/" target="_blank">https://www.nfp.fazenda.sp.gov.br/</a> e entre com seu login </p>
+            <img src="https://www.gacc.com.br/files/media/originals/3a.jpg" alt="Nota Fiscal Paulista" class="img-nota">
             <li>Digite o CNPJ: 07.145.094/0001-36</p>
             <li>Clique em:  doação automática</p>
             <li>Selecione a ONG DVA e confirme</p>
