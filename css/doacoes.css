@@ -56,7 +56,17 @@ main > div > h1, .caixa-titulo > h2{
 .caixa-texto > p, .caixa-texto > ul, ol > li{
     font-family: var(--fonte-secundaria);
     font-size: 25px;
+
 }
+
+.caixa-texto > ol > li{
+    font-family: var(--fonte-secundaria);
+    font-size: 25px;
+    margin-left: 20px;
+
+}
+
+
 
 
 main > div{
@@ -80,6 +90,8 @@ main > div{
     border-radius: 0px 0px 5px 5px;
     padding-top: 30px;
     position: relative;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.30);
+    overflow: hidden;
 }
 
 .alinhar{
@@ -95,6 +107,7 @@ main > div{
     background-position: center;
     display: flex;
     align-items: center;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.30);
 }
 
 .hero-doacao .overlay{
