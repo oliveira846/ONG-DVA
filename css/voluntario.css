@@ -195,3 +195,11 @@ margin-left: 40px;
     color: white;
     font-size: 25;
 }
+
+.aviso-contato{
+    background-color: var(--cor-titulo);
+    color: #ffffff;
+    border-radius: 5px;
+    display: flex;
+    gap
+}
