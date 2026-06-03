@@ -198,8 +198,18 @@ margin-left: 40px;
 
 .aviso-contato{
     background-color: var(--cor-titulo);
+    border-left: 10px solid var(--laranja-secundario-claro);
     color: #ffffff;
     border-radius: 5px;
     display: flex;
-    gap
+    padding: 25px 35px;
+    gap: 30px;
+    align-items: center;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.aviso-contato h3{
+    font-size: 30px;
+    margin-bottom: 5px;
 }
