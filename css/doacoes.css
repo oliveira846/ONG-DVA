@@ -51,7 +51,6 @@ main > div > h1, .caixa-titulo > h2{
 .caixa-titulo > h2{
     color: var(--cor-de-fundo);
     font-size: 50px;
-    text-shadow: 3px 3px 8px rgba(0,0,0,0.4);
 }
 
 .caixa-texto > p, .caixa-texto > ul, ol > li{
